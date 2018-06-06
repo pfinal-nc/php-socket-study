@@ -65,7 +65,7 @@ while (true) {
                 foreach ($write_socks as $key => $val) {
                     if ($val == $read) unset($write_socks[$key]);
                 }
-                
+
                 socket_close($read);
                 echo "client close" . PHP_EOL;
 
